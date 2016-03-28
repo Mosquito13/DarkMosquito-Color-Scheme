@@ -1,4 +1,4 @@
-#DarkMosquito Sublime Text Color Scheme
+#DarkMosquito Color Scheme for Sublime Text
 A dark color scheme for Sublime Text, the colors are based on Google Chrome Dev Tools (Dark Theme)
 
 ###Screenshots
