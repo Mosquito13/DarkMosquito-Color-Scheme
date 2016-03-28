@@ -264,6 +264,28 @@
 					<string>#BFDBE8</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: SQL Constant numeric</string>
+				<key>scope</key>
+				<string>string.quoted.double.sql.php source.sql.embedded.php constant.numeric.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#E55FE3</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: SQL String</string>
+				<key>scope</key>
+				<string>string.quoted.double.sql.php source.sql.embedded.php string.quoted.single.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D82C93</string>
+				</dict>
+			</dict>
 			<!-- HTML/XML -->
 			<dict>
 				<key>name</key>
