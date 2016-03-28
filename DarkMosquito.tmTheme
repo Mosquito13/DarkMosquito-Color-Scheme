@@ -280,7 +280,7 @@
 				<key>name</key>
 				<string>HTML/XML: Tag</string>
 				<key>scope</key>
-				<string>meta.tag, meta.tag entity</string>
+				<string>meta.tag, meta.tag entity, entity.name.tag.script.html, entity.name.tag.style.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
