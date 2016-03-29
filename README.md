@@ -10,3 +10,19 @@ PHP
 HTML
 
 ![DarkMosquito-Sublime-Text-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Sublime-Text-Color-Scheme/master/screenshots/HTML-Source.png)
+
+CSS
+
+![DarkMosquito-Sublime-Text-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Sublime-Text-Color-Scheme/master/screenshots/CSS-Source.png)
+
+Javascript
+
+![DarkMosquito-Sublime-Text-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Sublime-Text-Color-Scheme/master/screenshots/Javascript-Source.png)
+
+Ruby
+
+![DarkMosquito-Sublime-Text-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Sublime-Text-Color-Scheme/master/screenshots/Ruby-Source.png)
+
+Python
+
+![DarkMosquito-Sublime-Text-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Sublime-Text-Color-Scheme/master/screenshots/Python-Source.png)
