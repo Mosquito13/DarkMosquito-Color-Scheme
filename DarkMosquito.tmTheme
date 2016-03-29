@@ -320,6 +320,40 @@
 					<string>#9BBBDC</string>
 				</dict>
 			</dict>
+			<!-- XML -->
+			<dict>
+				<key>name</key>
+				<string>XML: Preprocessor</string>
+				<key>scope</key>
+				<string>text.xml meta.tag.preprocessor.xml entity.name.tag.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XML: Tag attributes</string>
+				<key>scope</key>
+				<string>text.xml meta.tag.preprocessor.xml entity.other.attribute-name.xml, text.xml meta.tag.xml entity.other.attribute-name.localname.xml</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XML: CDATA</string>
+				<key>scope</key>
+				<string>text.xml string.unquoted.cdata.xml punctuation.definition.string.begin.xml, text.xml string.unquoted.cdata.xml punctuation.definition.string.end.xml</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F0E8BC</string>
+				</dict>
+			</dict>
 			<!-- CSS -->
 			<dict>
 				<key>name</key>
