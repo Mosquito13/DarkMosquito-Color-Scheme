@@ -3,6 +3,12 @@ A dark color scheme for Sublime Text, the colors are based on Google Chrome Dev 
 
 ##Installation
 
+### Using [Package Control](https://sublime.wbond.net)
+
+Open `Tools -> Command Palette...`. Search for `Package Control: Install Package` and click enter. Wait for
+the available packages to show up and then search for `DarkMosquito Color Scheme`. Click enter and the theme should
+be installed.
+
 ###Download Manually
 * Download the files using the GitHub .zip download option
 * Unzip the files
