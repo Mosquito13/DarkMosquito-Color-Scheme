@@ -1,0 +1,19 @@
+
+diff --git a/folder/file.extension b/folder/file.extension
+index 384293...db12c9 100644
+--- a/folder/file.extension
+--- b/folder/file.extension
+@@ -2,5 +2,5 @@
+
+    some source
+
+-   this is a
+-   deleted content
+
++   this is an
++   added content
+
+!   this is a
+!   modified content
+
+    some source

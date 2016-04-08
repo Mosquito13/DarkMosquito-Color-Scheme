@@ -1,0 +1,23 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE jasperReport PUBLIC "//jasperReports//DTD Report Designer//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport name="myReport" pageWidth="800" pageHeight="600">
+    <property name="ireport.scriptlethandling" value="0"/>
+    <property name="ireport.encoding" value="UTF-8"/>
+    <import value="java.util.*"/>
+    <parameter name="PARAM" isForPrompting="false" class="java.lang.String"/>
+    <queryString>
+        <![CDATA[SELECT A.FIELD FROM TABLE A WHERE A.KEYFIELD = $P!{PARAM}]]>
+    </queryString>
+    <detail>
+        <band height="16" isSplitAllowed="true">
+            <frame>
+                <reportElement mode="Opaque" x="0" y="0" width="800" height="16">
+                    <printWhenExpression>
+                        <![CDATA[new Boolean(($V{REPORT_COUNT}.intValue()%2)==0)]]>
+                    </printWhenExpression>
+                </reportElement>
+            </frame>
+        </band>
+    </detail>
+</jasperReport>
