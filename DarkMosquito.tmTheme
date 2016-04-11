@@ -289,9 +289,9 @@
 			<!-- HTML/XML -->
 			<dict>
 				<key>name</key>
-				<string>HTML/XML: DOCTYPE</string>
+				<string>HTML: DOCTYPE</string>
 				<key>scope</key>
-				<string>meta.tag.sgml.doctype</string>
+				<string>meta.tag.sgml.html meta.tag.sgml.doctype.html entity.name.tag.doctype.html, meta.tag.sgml.html meta.tag.sgml.doctype.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -302,7 +302,7 @@
 				<key>name</key>
 				<string>HTML/XML: Tag</string>
 				<key>scope</key>
-				<string>meta.tag, meta.tag entity, entity.name.tag.script.html, entity.name.tag.style.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.html</string>
+				<string>meta.tag, meta.tag entity, entity.name.tag.script.html, entity.name.tag.style.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.html, source.css.embedded.html entity.name.tag.html, source.js.embedded.html entity.name.tag.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -318,6 +318,17 @@
 				<dict>
 					<key>foreground</key>
 					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>HTML/XML: Embedded css</string>
+				<key>scope</key>
+				<string>meta.attribute-with-value.style.html source.css, meta.attribute-with-value.style.html source.css meta.property-name.css, meta.attribute-with-value.style.html source.css meta.property-name.css support.type.property-name.css, meta.attribute-with-value.style.html source.css keyword.other.unit.css, meta.attribute-with-value.style.html source.css constant.numeric.css, meta.attribute-with-value.style.html source.css constant.other.color.rgb-value.css, meta.attribute-with-value.style.html source.css support.constant.property-value.css, meta.attribute-with-value.style.html source.css keyword.other.important.css, meta.attribute-with-value.style.html source.css support.constant.font-name.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F29766</string>
 				</dict>
 			</dict>
 			<!-- XML -->
@@ -485,6 +496,139 @@
 					<string>#2C6224</string>
 					<key>foreground</key>
 					<string>#F8F8F8</string>
+				</dict>
+			</dict>
+			<!-- JAVASCRIPT -->
+			<dict>
+				<key>name</key>
+				<string>JS: Storage</string>
+				<key>scope</key>
+				<string>storage.type.js, storage.type.function.js, variable.language.this.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9A7FD5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Function name</string>
+				<key>scope</key>
+				<string>meta.function.js entity.name.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#5DB0D7</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Keyword operators</string>
+				<key>scope</key>
+				<string>keyword.operator.logical.js, keyword.operator.comparison.js, keyword.operator.assignment.js, keyword.operator.arithmetic.js, keyword.operator.relational.js, keyword.operator.ternary.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Accessor operator</string>
+				<key>scope</key>
+				<string>keyword.operator.accessor.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Variable</string>
+				<key>scope</key>
+				<string>variable.other.readwrite.js, variable.other.object.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Support</string>
+				<key>scope</key>
+				<string>support.type.object.dom.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Object property</string>
+				<key>scope</key>
+				<string>meta.property.object.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Object instance</string>
+				<key>scope</key>
+				<string>meta.instance.constructor variable.function.constructor.js, variable.other.class.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Variable function</string>
+				<key>scope</key>
+				<string>variable.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#E8E0AF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Object key</string>
+				<key>scope</key>
+				<string>constant.other.object.key.js string.unquoted.label.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Constants</string>
+				<key>scope</key>
+				<string>meta.property.class.js variable.other.property.static.js, variable.other.constant.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Separator key : value</string>
+				<key>scope</key>
+				<string>punctuation.separator.key-value.js, meta.switch.js keyword.operator.ternary.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
 				</dict>
 			</dict>
 		</array>

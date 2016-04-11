@@ -23,7 +23,3 @@ var parseXML = function ( data ) {
         jQuery.error("Invalid XML: " + data);
     }
 }
-
-function test( param ) {
-    aeho();
-}
