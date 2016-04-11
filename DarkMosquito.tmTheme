@@ -336,7 +336,7 @@
 				<key>name</key>
 				<string>XML: Preprocessor</string>
 				<key>scope</key>
-				<string>text.xml meta.tag.preprocessor.xml entity.name.tag.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml</string>
+				<string>text.xml meta.tag.preprocessor.xml entity.name.tag.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml, meta.tag.sgml.doctype</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
