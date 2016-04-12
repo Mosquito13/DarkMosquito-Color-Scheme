@@ -1,0 +1,4 @@
+v1.2.1
+
+- Fixed colors of dollar variables in javascript syntax
+- Fixed colors of built-in classes in javascript syntax
