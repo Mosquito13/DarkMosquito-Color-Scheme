@@ -478,6 +478,17 @@
 					<string>#E8E0AF</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Vendor prefixes</string>
+				<key>scope</key>
+				<string>meta.property-name.css support.type.vendor-prefix.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#8CF0FF</string>
+				</dict>
+			</dict>
 			<!-- DIFF -->
 			<dict>
 				<key>name</key>
