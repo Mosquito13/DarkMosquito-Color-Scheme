@@ -1,0 +1,5 @@
+v1.2.3
+
+- Fixed color names in CSS syntax
+- Fixed color of vendor prefixes in CSS syntax
+- New colors for misc functions in CSS syntax (rgb, rgba, url, ...)
