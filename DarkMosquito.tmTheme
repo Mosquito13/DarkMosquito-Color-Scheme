@@ -467,6 +467,17 @@
 					<string>#D9D9D9</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Misc functions</string>
+				<key>scope</key>
+				<string>meta.property-value.css support.function.misc.css</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#E8E0AF</string>
+				</dict>
+			</dict>
 			<!-- DIFF -->
 			<dict>
 				<key>name</key>
