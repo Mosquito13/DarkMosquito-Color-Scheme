@@ -547,7 +547,7 @@
 				<key>name</key>
 				<string>JS: Variable</string>
 				<key>scope</key>
-				<string>variable.other.readwrite.js, variable.other.object.js</string>
+				<string>variable.other.readwrite.js, variable.other.object.js, variable.other.dollar.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -580,7 +580,7 @@
 				<key>name</key>
 				<string>JS: Object instance</string>
 				<key>scope</key>
-				<string>meta.instance.constructor variable.function.constructor.js, variable.other.class.js</string>
+				<string>meta.instance.constructor variable.function.constructor.js, variable.other.class.js, support.class.builtin.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
