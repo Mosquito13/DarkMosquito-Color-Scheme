@@ -286,6 +286,17 @@
 					<string>#F071BC</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: SQL fields and aliases</string>
+				<key>scope</key>
+				<string>string.quoted.double.sql source.sql.embedded.php constant.other.database-name.sql, string.quoted.double.sql source.sql.embedded.php constant.other.table-name.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D7BAD9</string>
+				</dict>
+			</dict>
 			<!-- HTML/XML -->
 			<dict>
 				<key>name</key>
@@ -625,6 +636,40 @@
 				<string>JS: Separator key : value</string>
 				<key>scope</key>
 				<string>punctuation.separator.key-value.js, meta.switch.js keyword.operator.ternary.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<!-- SQL -->
+			<dict>
+				<key>name</key>
+				<string>SQL: Storages</string>
+				<key>scope</key>
+				<string>storage.modifier.sql, storage.type.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9A7FD5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>SQL: Functions</string>
+				<key>scope</key>
+				<string>support.function.aggregate.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9A7FD5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>SQL: Fix field with alias</string>
+				<key>scope</key>
+				<string>source.sql constant.other.database-name.sql, source.sql constant.other.table-name.sql</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
