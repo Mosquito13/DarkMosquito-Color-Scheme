@@ -110,6 +110,8 @@
 				<string>variable</string>
 				<key>settings</key>
 				<dict>
+					<key>fontStyle</key>
+					<string/>
 					<key>foreground</key>
 					<string>#5DB0D7</string>
 				</dict>
@@ -222,6 +224,17 @@
 			<!-- PHP -->
 			<dict>
 				<key>name</key>
+				<string>PHP: General source</string>
+				<key>scope</key>
+				<string>source.php</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string/>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>PHP: Class property</string>
 				<key>scope</key>
 				<string>variable.other.property.php</string>
@@ -297,6 +310,19 @@
 					<string>#D7BAD9</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: Tags inside HTML elements</string>
+				<key>scope</key>
+				<string>meta.tag.structure.any.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, string.quoted.single.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.begin.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.end.php</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string/>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
 			<!-- HTML/XML -->
 			<dict>
 				<key>name</key>
@@ -346,9 +372,11 @@
 				<key>name</key>
 				<string>HTML/XML: Inline css</string>
 				<key>scope</key>
-				<string>meta.attribute-with-value.style.html source.css, meta.attribute-with-value.style.html source.css meta.property-name.css, meta.attribute-with-value.style.html source.css meta.property-name.css support.type.property-name.css, meta.attribute-with-value.style.html source.css keyword.other.unit.css, meta.attribute-with-value.style.html source.css constant.numeric.css, meta.attribute-with-value.style.html source.css constant.other.color.rgb-value.css, meta.attribute-with-value.style.html source.css support.constant.property-value.css, meta.attribute-with-value.style.html source.css keyword.other.important.css, meta.attribute-with-value.style.html source.css support.constant.font-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css support.constant.color.w3c-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css invalid.deprecated.color.w3c-non-standard-color-name.css</string>
+				<string>meta.attribute-with-value.style.html source.css, meta.attribute-with-value.style.html source.css meta.property-name.css, meta.attribute-with-value.style.html source.css meta.property-name.css support.type.property-name.css, meta.attribute-with-value.style.html source.css keyword.other.unit.css, meta.attribute-with-value.style.html source.css constant.numeric.css, meta.attribute-with-value.style.html source.css constant.other.color.rgb-value.css, meta.attribute-with-value.style.html source.css support.constant.property-value.css, meta.attribute-with-value.style.html source.css keyword.other.important.css, meta.attribute-with-value.style.html source.css support.constant.font-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css support.constant.color.w3c-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css invalid.deprecated.color.w3c-non-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css punctuation.separator.key-value.css, meta.attribute-with-value.style.html source.css meta.property-value.css punctuation.terminator.rule.css</string>
 				<key>settings</key>
 				<dict>
+					<key>fontStyle</key>
+					<string/>
 					<key>foreground</key>
 					<string>#F29766</string>
 				</dict>
@@ -401,114 +429,184 @@
 			<!-- CSS -->
 			<dict>
 				<key>name</key>
-				<string>CSS: Property value</string>
+				<string>CSS: Braces, commas, semicolons, colons</string>
 				<key>scope</key>
-				<string>keyword.other.unit.css, constant.numeric.css, constant.other.color.rgb-value.css, support.constant.property-value.css, keyword.other.important.css, support.constant.font-name.css, meta.property-value.css support.constant.color.w3c-standard-color-name.css</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D5D5D5</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSS: Property name</string>
-				<key>scope</key>
-				<string>support.type.property-name.css, meta.property-name.css</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#8CF0FF</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSS: Selector</string>
-				<key>scope</key>
-				<string>meta.selector.css entity.name.tag, meta.selector.css entity.other.attribute-name.class, meta.selector.css entity.other.attribute-name.id</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#3288B3</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSS: Pseudo class</string>
-				<key>scope</key>
-				<string>meta.selector.css entity.other.attribute-name.pseudo-class.css</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#89BFD8</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSS: At media</string>
-				<key>scope</key>
-				<string>meta.at-rule.media.css keyword.control.at-rule.media.css</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#F29766</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSS: Media property name</string>
-				<key>scope</key>
-				<string>meta.at-rule.media.css support.type.property-name.media.css, meta.at-rule.media.css support.constant.media.css</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D2C057</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSS: Media logic operator</string>
-				<key>scope</key>
-				<string>meta.at-rule.media.css keyword.operator.logic.media.css</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#F29766</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>CSS: Deprecated color names</string>
-				<key>scope</key>
-				<string>meta.property-value.css invalid.deprecated.color.w3c-non-standard-color-name.css</string>
+				<string>entity.name.tag.wildcard.css, meta.selector.css, punctuation.section.function.css, punctuation.section.property-list.css, punctuation.separator.key-value.css, punctuation.terminator.rule.css, entity.other.attribute-name.pseudo-element.css punctuation.definition.entity.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
-					<string></string>
+					<string>bold</string>
 					<key>foreground</key>
 					<string>#D9D9D9</string>
 				</dict>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>CSS: Misc functions</string>
+				<string>CSS: Selector</string>
 				<key>scope</key>
-				<string>meta.property-value.css support.function.misc.css</string>
+				<string>meta.selector.css entity.name.tag.css, entity.other.attribute-name.attribute.css, entity.other.attribute-name.pseudo-element.css, meta.selector.css entity.other.attribute-name.class.css</string>
 				<key>settings</key>
 				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
 					<key>foreground</key>
-					<string>#E8E0AF</string>
+					<string>#FFA34F</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Property name</string>
+				<key>scope</key>
+				<string>meta.property-name.css, support.type.property-name.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#8CF0FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Property value</string>
+				<key>scope</key>
+				<string>meta.property-value.css, support.constant.property-value.css, constant.numeric.css, keyword.other.unit.css, constant.other.color.rgb-value.css, support.function.misc.css, meta.property-value.css support.function.misc.css, support.constant.font-name.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Pseudo class</string>
+				<key>scope</key>
+				<string>entity.other.attribute-name.pseudo-class.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: String</string>
+				<key>scope</key>
+				<string>meta.property-value.css string.quoted.double.css, meta.property-value.css string.quoted.double.css constant.character.escape.css, meta.property-value.css string.quoted.single.css, meta.property-value.css string.quoted.single.css constant.character.escape.css, meta.attribute-selector.css string.quoted.double.attribute-value.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#E7C26F</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Color name</string>
+				<key>scope</key>
+				<string>support.constant.color.w3c-standard-color-name.css, invalid.deprecated.color.w3c-non-standard-color-name.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#07909A</string>
 				</dict>
 			</dict>
 			<dict>
 				<key>name</key>
 				<string>CSS: Vendor prefixes</string>
 				<key>scope</key>
-				<string>meta.property-name.css support.type.vendor-prefix.css</string>
+				<string>meta.property-name.css support.type.vendor-prefix.css, entity.other.attribute-name.pseudo-element.css support.type.vendor-prefix.css, meta.property-value.css support.type.vendor-prefix.css</string>
 				<key>settings</key>
 				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
 					<key>foreground</key>
 					<string>#8CF0FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Media</string>
+				<key>scope</key>
+				<string>meta.at-rule.media.css keyword.control.at-rule.media.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#FFA34F</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Media constant</string>
+				<key>scope</key>
+				<string>meta.at-rule.media.css support.constant.media.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#D9D9D9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Media logical keyword</string>
+				<key>scope</key>
+				<string>meta.at-rule.media.css keyword.operator.logic.media.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#07909A</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Media property name</string>
+				<key>scope</key>
+				<string>meta.at-rule.media.css support.type.property-name.media.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#8CF0FF</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: !important</string>
+				<key>scope</key>
+				<string>keyword.other.important.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#07909A</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>CSS: Variable parameter</string>
+				<key>scope</key>
+				<string>variable.parameter.misc.css</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#FFA34F</string>
 				</dict>
 			</dict>
 			<!-- DIFF -->
