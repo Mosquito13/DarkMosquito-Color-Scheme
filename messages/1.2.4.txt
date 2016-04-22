@@ -1,0 +1,6 @@
+v1.2.4
+
+- Refactored CSS syntax highlighting - Issue #7
+- Fixed color of some HTML attributes (style, onclick, onchange, ...) - Issue #8
+- Fixed color of HTML colors (w3c standard and non-standard) in inline css - Issue #8
+- Fixed color of inline javascript in HTML tags - Issue #9
