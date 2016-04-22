@@ -322,9 +322,20 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>HTML/XML: Tag separator key-value</string>
+				<key>scope</key>
+				<string>punctuation.separator.key-value.html</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>HTML/XML: Tag attributes</string>
 				<key>scope</key>
-				<string>entity.other.attribute-name.html, meta.attribute-with-value.id.html entity.other.attribute-name.id</string>
+				<string>entity.other.attribute-name.html, meta.attribute-with-value.id.html entity.other.attribute-name.id, entity.other.attribute-name.event.html, entity.other.attribute-name.style.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -335,7 +346,7 @@
 				<key>name</key>
 				<string>HTML/XML: Embedded css</string>
 				<key>scope</key>
-				<string>meta.attribute-with-value.style.html source.css, meta.attribute-with-value.style.html source.css meta.property-name.css, meta.attribute-with-value.style.html source.css meta.property-name.css support.type.property-name.css, meta.attribute-with-value.style.html source.css keyword.other.unit.css, meta.attribute-with-value.style.html source.css constant.numeric.css, meta.attribute-with-value.style.html source.css constant.other.color.rgb-value.css, meta.attribute-with-value.style.html source.css support.constant.property-value.css, meta.attribute-with-value.style.html source.css keyword.other.important.css, meta.attribute-with-value.style.html source.css support.constant.font-name.css</string>
+				<string>meta.attribute-with-value.style.html source.css, meta.attribute-with-value.style.html source.css meta.property-name.css, meta.attribute-with-value.style.html source.css meta.property-name.css support.type.property-name.css, meta.attribute-with-value.style.html source.css keyword.other.unit.css, meta.attribute-with-value.style.html source.css constant.numeric.css, meta.attribute-with-value.style.html source.css constant.other.color.rgb-value.css, meta.attribute-with-value.style.html source.css support.constant.property-value.css, meta.attribute-with-value.style.html source.css keyword.other.important.css, meta.attribute-with-value.style.html source.css support.constant.font-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css support.constant.color.w3c-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css invalid.deprecated.color.w3c-non-standard-color-name.css</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
