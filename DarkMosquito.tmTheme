@@ -444,7 +444,7 @@
 				<key>name</key>
 				<string>CSS: Selector</string>
 				<key>scope</key>
-				<string>meta.selector.css entity.name.tag.css, entity.other.attribute-name.attribute.css, entity.other.attribute-name.pseudo-element.css, meta.selector.css entity.other.attribute-name.class.css</string>
+				<string>meta.selector.css entity.name.tag.css, entity.other.attribute-name.attribute.css, entity.other.attribute-name.pseudo-element.css, meta.selector.css entity.other.attribute-name.class.css, meta.selector.css entity.other.attribute-name.id.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
