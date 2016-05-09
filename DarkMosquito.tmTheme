@@ -181,11 +181,11 @@
 				<key>name</key>
 				<string>String regexp</string>
 				<key>scope</key>
-				<string>string.regexp, string.regexp keyword.operator.regexp, string.regexp constant.character.escape</string>
+				<string>string.regexp, string.regexp keyword.operator.regexp, string.regexp constant.character.escape, constant.other.character-class.escape.backslash.regexp, keyword.operator.quantifier.regexp, keyword.operator.or.regexp, constant.other.character-class.set.regexp</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#E9C062</string>
+					<string>#F28B54</string>
 				</dict>
 			</dict>
 			<dict>
@@ -806,6 +806,17 @@
 				<dict>
 					<key>foreground</key>
 					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Javascript specific regex</string>
+				<key>scope</key>
+				<string>string.regexp.js keyword.other.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F28B54</string>
 				</dict>
 			</dict>
 			<!-- SQL -->
