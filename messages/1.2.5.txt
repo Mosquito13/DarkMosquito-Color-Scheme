@@ -1,0 +1,6 @@
+v1.2.5
+
+- Set support variables in Javascript syntax to white
+- Now regex are orange like strings
+- Fixed color of regex in Javascript syntax - Issue #10
+- Fixed color of prototype in Javascript syntax - Issue #11
