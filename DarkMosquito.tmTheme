@@ -819,6 +819,17 @@
 					<string>#F28B54</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Support</string>
+				<key>scope</key>
+				<string>support.type.object.module.js, support.type.object.console.js, support.class.error.js, support.type.object.node.js, support.module.node.js, support.type.object.process.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
 			<!-- SQL -->
 			<dict>
 				<key>name</key>
