@@ -392,6 +392,19 @@
 					<string>#F29766</string>
 				</dict>
 			</dict>
+			<dict>
+				<key>name</key>
+				<string>HTML/XML: Inline illegal</string>
+				<key>scope</key>
+				<string>string.quoted.double.html invalid.illegal.bad-ampersand.html</string>
+				<key>settings</key>
+				<dict>
+					<key>background</key>
+					<string>#242424</string>
+					<key>foreground</key>
+					<string>#F29766</string>
+				</dict>
+			</dict>
 			<!-- XML -->
 			<dict>
 				<key>name</key>
@@ -669,7 +682,7 @@
 				<key>name</key>
 				<string>JS: Storage</string>
 				<key>scope</key>
-				<string>storage.type.js, storage.type.function.js, variable.language.this.js</string>
+				<string>meta.function.declaration.js storage.type.function.js, storage.type.js, variable.language.this.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -678,141 +691,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Function name</string>
+				<string>JS: Strings</string>
 				<key>scope</key>
-				<string>meta.function.js entity.name.function.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#5DB0D7</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Keyword operators</string>
-				<key>scope</key>
-				<string>keyword.operator.logical.js, keyword.operator.comparison.js, keyword.operator.assignment.js, keyword.operator.arithmetic.js, keyword.operator.relational.js, keyword.operator.ternary.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D2C057</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Accessor operator</string>
-				<key>scope</key>
-				<string>keyword.operator.accessor.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D9D9D9</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Variable</string>
-				<key>scope</key>
-				<string>variable.other.readwrite.js, variable.other.object.js, variable.other.dollar.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D9D9D9</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Support</string>
-				<key>scope</key>
-				<string>support.type.object.dom.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D9D9D9</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Object property</string>
-				<key>scope</key>
-				<string>meta.property.object.js, meta.function.static.js entity.name.function.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D2C057</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Object instance</string>
-				<key>scope</key>
-				<string>meta.instance.constructor variable.function.constructor.js, variable.other.class.js, support.class.builtin.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D9D9D9</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Variable function</string>
-				<key>scope</key>
-				<string>variable.function.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#E8E0AF</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Object key</string>
-				<key>scope</key>
-				<string>constant.other.object.key.js string.unquoted.label.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D2C057</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Constants</string>
-				<key>scope</key>
-				<string>meta.property.class.js variable.other.property.static.js, variable.other.constant.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D2C057</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Separator key : value</string>
-				<key>scope</key>
-				<string>punctuation.separator.key-value.js, meta.switch.js keyword.operator.ternary.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D9D9D9</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: prototype</string>
-				<key>scope</key>
-				<string>variable.language.prototype.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D2C057</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Javascript specific regex</string>
-				<key>scope</key>
-				<string>string.regexp.js keyword.other.js</string>
+				<string>string.quoted.single.js constant.character.escape.js, string.quoted.double.js constant.character.escape.js, string.quoted.double.js, string.quoted.single.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -821,9 +702,119 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>JS: Operator</string>
+				<key>scope</key>
+				<string>keyword.operator.bitwise.js, keyword.operator.ternary.js, keyword.operator.assignment.augmented.js, keyword.operator.relational.js, keyword.operator.arithmetic.js, keyword.operator.logical.js, keyword.operator.comparison.js, meta.conditional.js meta.group.js keyword.operator.logical.js, keyword.operator.assignment.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>name</string>
+				<key>scope</key>
+				<string>support.class.dollar.js, variable.other.dollar.js, variable.other.object.dollar.js, variable.other.dollar.only.js punctuation.dollar.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F0E8BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>JS: Support</string>
 				<key>scope</key>
-				<string>support.type.object.module.js, support.type.object.console.js, support.class.error.js, support.type.object.node.js, support.module.node.js, support.type.object.process.js</string>
+				<string>support.function.js, support.type.object.dom.js, support.module.node.js, support.class.error.js, support.class.builtin.js, support.type.object.module.js, support.type.object.node.js, support.class.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Function call</string>
+				<key>scope</key>
+				<string>meta.function-call.js variable.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Function declaration</string>
+				<key>scope</key>
+				<string>meta.function.declaration.js entity.name.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#5DB0D7</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Object function call</string>
+				<key>scope</key>
+				<string>meta.function-call.method.js variable.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Objects</string>
+				<key>scope</key>
+				<string>keyword.other.accessor.js, meta.function-call.constructor.js variable.type.js, variable.other.object.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Object property</string>
+				<key>scope</key>
+				<string>meta.property.object.dollar.js, meta.object-literal.js meta.object-literal.key.js meta.function.declaration.js entity.name.function.js, meta.object-literal.js meta.object-literal.key.js, meta.property.object.js entity.name.function.js, meta.property.object.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Prototype</string>
+				<key>scope</key>
+				<string>support.constant.prototype.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Regex</string>
+				<key>scope</key>
+				<string>string.regexp.js keyword.control.anchor.regexp, string.regexp.js keyword.other.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>JS: Variables</string>
+				<key>scope</key>
+				<string>variable.language.arguments.js, variable.other.readwrite.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>

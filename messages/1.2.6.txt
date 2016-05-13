@@ -1,0 +1,3 @@
+v1.2.6
+
+- Updated theme to work properly with Sublime Build 3114 - Issue #12
