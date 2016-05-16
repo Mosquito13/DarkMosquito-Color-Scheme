@@ -1,8 +1,11 @@
 
 <?php
+    use Test\Test2\MyNamespace;
     namespace MyNamespace;
 
     class MyClass extends MyParentClass implements MyInterface {
+
+        const TEST = 1;
 
         /**
          * A boolean
@@ -24,7 +27,11 @@
 
         public function __construct() {
             global $anyGlobal;
+            
+            parent::staticCall();
 
+            self::TEST;
+            
             $this->myBoolean = false;
 
             $this->myString = "str";
@@ -45,6 +52,8 @@
                         FIELD_A";
 
             $anotherBoolean = $this->myFunction();
+            
+            myGlobalFunction();
         }
 
         /**
