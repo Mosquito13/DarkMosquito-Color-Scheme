@@ -374,7 +374,7 @@
 				<key>name</key>
 				<string>HTML/XML: Tag</string>
 				<key>scope</key>
-				<string>meta.tag, meta.tag entity, entity.name.tag.script.html, entity.name.tag.style.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.html, source.css.embedded.html entity.name.tag.html, source.js.embedded.html entity.name.tag.html</string>
+				<string>entity.name.tag.html, meta.tag, meta.tag entity, entity.name.tag.script.html, entity.name.tag.style.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, punctuation.definition.tag.html, source.css.embedded.html entity.name.tag.html, source.js.embedded.html entity.name.tag.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -492,7 +492,7 @@
 				<key>name</key>
 				<string>CSS: Selector</string>
 				<key>scope</key>
-				<string>meta.selector.css entity.name.tag.css, entity.other.attribute-name.attribute.css, entity.other.attribute-name.pseudo-element.css, meta.selector.css entity.other.attribute-name.class.css, meta.selector.css entity.other.attribute-name.id.css</string>
+				<string>meta.selector.css entity.name.tag.custom.css, meta.selector.css, meta.selector.css entity.name.tag.css, entity.other.attribute-name.attribute.css, entity.other.attribute-name.pseudo-element.css, meta.selector.css entity.other.attribute-name.class.css, meta.selector.css entity.other.attribute-name.id.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -518,7 +518,7 @@
 				<key>name</key>
 				<string>CSS: Property value</string>
 				<key>scope</key>
-				<string>meta.property-value.css, support.constant.property-value.css, constant.numeric.css, keyword.other.unit.css, constant.other.color.rgb-value.css, support.function.misc.css, meta.property-value.css support.function.misc.css, support.constant.font-name.css</string>
+				<string>meta.property-value.css support.constant.color.w3c-special-color-keyword.css, meta.property-value.css, support.constant.property-value.css, constant.numeric.css, keyword.other.unit.css, constant.other.color.rgb-value.css, support.function.misc.css, meta.property-value.css support.function.misc.css, support.constant.font-name.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
