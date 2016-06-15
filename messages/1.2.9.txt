@@ -1,0 +1,7 @@
+v1.2.9
+
+- Fixed PHP tag highlight inside HTML tags.
+- Fixed highlight of class attribute in HTML syntax. #14
+- Fixed javascript inline highlight. #15
+- Fixed CSS highlight (selector, support functions, font names). #16
+- Fixed SQL highlight in single quoted PHP strings. #17
