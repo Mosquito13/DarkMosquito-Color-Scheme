@@ -327,7 +327,7 @@
 				<key>name</key>
 				<string>PHP: Tags inside HTML elements</string>
 				<key>scope</key>
-				<string>meta.tag.structure.any.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, string.quoted.single.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.begin.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.end.php</string>
+				<string>meta.tag.structure.any.html meta.embedded.block.php punctuation.section.embedded.end.php, meta.tag.structure.any.html meta.embedded.block.php punctuation.section.embedded.begin.php, meta.tag.structure.any.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, string.quoted.single.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.begin.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.end.php</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -396,7 +396,7 @@
 				<key>name</key>
 				<string>HTML/XML: Tag attributes</string>
 				<key>scope</key>
-				<string>entity.other.attribute-name.html, meta.attribute-with-value.id.html entity.other.attribute-name.id, entity.other.attribute-name.event.html, entity.other.attribute-name.style.html</string>
+				<string>entity.other.attribute-name.class.html, entity.other.attribute-name.html, meta.attribute-with-value.id.html entity.other.attribute-name.id, entity.other.attribute-name.event.html, entity.other.attribute-name.style.html</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
