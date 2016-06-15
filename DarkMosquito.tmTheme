@@ -294,7 +294,7 @@
 				<key>name</key>
 				<string>PHP: SQL Constant numeric</string>
 				<key>scope</key>
-				<string>meta.string-contents.quoted.double.php source.sql constant.numeric.sql, string.quoted.double.sql.php source.sql.embedded.php constant.numeric.sql</string>
+				<string>string.quoted.single.sql.php source.sql.embedded.php constant.numeric.sql, meta.string-contents.quoted.double.php source.sql constant.numeric.sql, string.quoted.double.sql.php source.sql.embedded.php constant.numeric.sql</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -316,7 +316,7 @@
 				<key>name</key>
 				<string>PHP: SQL fields and aliases</string>
 				<key>scope</key>
-				<string>meta.string-contents.quoted.double.php source.sql constant.other.table-name.sql, meta.string-contents.quoted.double.php source.sql constant.other.database-name.sql, string.quoted.double.sql source.sql.embedded.php constant.other.database-name.sql, string.quoted.double.sql source.sql.embedded.php constant.other.table-name.sql</string>
+				<string>string.quoted.single.sql.php source.sql.embedded.php constant.other.table-name.sql, string.quoted.single.sql.php source.sql.embedded.php constant.other.database-name.sql, meta.string-contents.quoted.double.php source.sql constant.other.table-name.sql, meta.string-contents.quoted.double.php source.sql constant.other.database-name.sql, string.quoted.double.sql source.sql.embedded.php constant.other.database-name.sql, string.quoted.double.sql source.sql.embedded.php constant.other.table-name.sql</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
