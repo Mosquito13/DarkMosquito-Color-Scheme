@@ -529,7 +529,7 @@
 				<key>name</key>
 				<string>CSS: Property value</string>
 				<key>scope</key>
-				<string>meta.property-value.css meta.function-call.css support.function.url.css, meta.property-value.css meta.function-call.css support.function.gradient.css, meta.property-value.css meta.function-call.css support.function.color.css, meta.property-value.css support.constant.color.w3c-special-color-keyword.css, meta.property-value.css, support.constant.property-value.css, constant.numeric.css, keyword.other.unit.css, constant.other.color.rgb-value.css, support.function.misc.css, meta.property-value.css support.function.misc.css, support.constant.font-name.css</string>
+				<string>meta.property-value.css meta.function-call.css meta.group.css keyword.other.css, meta.property-value.css meta.function-call.css support.function.url.css, meta.property-value.css meta.function-call.css support.function.gradient.css, meta.property-value.css meta.function-call.css support.function.color.css, meta.property-value.css support.constant.color.w3c-special-color-keyword.css, meta.property-value.css, support.constant.property-value.css, constant.numeric.css, keyword.other.unit.css, constant.other.color.rgb-value.css, support.function.misc.css, meta.property-value.css support.function.misc.css, support.constant.font-name.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -555,7 +555,7 @@
 				<key>name</key>
 				<string>CSS: String</string>
 				<key>scope</key>
-				<string>meta.property-value.css string.quoted.double.css, meta.property-value.css string.quoted.double.css constant.character.escape.css, meta.property-value.css string.quoted.single.css, meta.property-value.css string.quoted.single.css constant.character.escape.css, meta.attribute-selector.css string.quoted.double.attribute-value.css</string>
+				<string>meta.property-value.css meta.function-call.css meta.group.css string.unquoted.css, meta.property-value.css string.quoted.double.css, meta.property-value.css string.quoted.double.css constant.character.escape.css, meta.property-value.css string.quoted.single.css, meta.property-value.css string.quoted.single.css constant.character.escape.css, meta.attribute-selector.css string.quoted.double.attribute-value.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -911,6 +911,118 @@
 				<dict>
 					<key>foreground</key>
 					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<!-- MISC -->
+			<dict>
+				<key>name</key>
+				<string>Properties: key-value separator</string>
+				<key>scope</key>
+				<string>source.java-props punctuation.separator.key-value.java-props</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<!-- XDEBUG -->
+			<dict>
+				<key>name</key>
+				<string>XDebug: Breakpoint file</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.breakpoint.file support.type.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#5DB0D7</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: Breakpoint file name</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.breakpoint.file comment.line.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#898989</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: Breakpoint/Watch enabled</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.watch.entry entity.other.attribute-name.anchor.settings, xdebug.output xdebug.output.breakpoint.line entity.other.attribute-name.anchor.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: Breakpoint line</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.breakpoint.line variable.other.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: Stack entry index</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.stack.entry string.quoted.settings, xdebug.output xdebug.output.stack.entry keyword.operator.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: Stack entry file name</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.stack.entry variable.other.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: stack entry line</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.stack.entry variable.parameter.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A1F7B5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: variable type</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.context.property support.type.settings, xdebug.output xdebug.output.context.object support.type.settings, xdebug.output xdebug.output.watch.entry support.type.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>XDebug: variable parameter</string>
+				<key>scope</key>
+				<string>xdebug.output xdebug.output.context.object variable.parameter.settings, xdebug.output xdebug.output.watch.entry variable.parameter.settings</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
 				</dict>
 			</dict>
 		</array>
