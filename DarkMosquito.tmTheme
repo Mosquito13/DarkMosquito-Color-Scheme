@@ -107,7 +107,7 @@
 				<key>name</key>
 				<string>Variable</string>
 				<key>scope</key>
-				<string>variable</string>
+				<string>variable, string variable</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -186,17 +186,6 @@
 				<dict>
 					<key>foreground</key>
 					<string>#F28B54</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>String variable</string>
-				<key>scope</key>
-				<string>string variable</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#6F93A5</string>
 				</dict>
 			</dict>
 			<dict>
@@ -327,7 +316,7 @@
 				<key>name</key>
 				<string>PHP: Tags inside HTML elements</string>
 				<key>scope</key>
-				<string>meta.tag.structure.any.html meta.embedded.block.php punctuation.section.embedded.end.php, meta.tag.structure.any.html meta.embedded.block.php punctuation.section.embedded.begin.php, meta.tag.structure.any.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, string.quoted.single.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.begin.php, meta.tag.inline.any.html meta.embedded.line.php punctuation.section.embedded.end.php</string>
+				<string>meta.tag.structure.any.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, string.quoted.single.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -356,6 +345,52 @@
 				<dict>
 					<key>foreground</key>
 					<string>#F0E8BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: source inside HTML tags - blue</string>
+				<key>scope</key>
+				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.index.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.global.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.global.safer.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.index.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.global.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.global.safer.php punctuation.definition.variable.php</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#5DB0D7</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: source inside HTML tags - white</string>
+				<key>scope</key>
+				<string>meta.embedded.line.php source.php, string.quoted.single.js meta.embedded.block.php source.php, string.quoted.double.js meta.embedded.block.php source.php, punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, source.php string.quoted.double.sql.php source.sql.embedded.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php punctuation.definition.array.begin.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php punctuation.definition.array.end.php, source.php string.quoted.double.sql.php source.sql.embedded.php punctuation.section.array.begin.php, source.php string.quoted.double.sql.php source.sql.embedded.php punctuation.section.array.end.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.function-call.object.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.function-call.object.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php punctuation.definition.array.end.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php punctuation.definition.array.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.section.array.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.section.array.end.php, meta.embedded.line.php source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.variable.php</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string/>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: source inside HTML tags - orange</string>
+				<key>scope</key>
+				<string>source.php string.quoted.double.php, source.php string.quoted.single.php, string.quoted.single.js meta.embedded.block.php source.php string.quoted.single.php, string.quoted.single.js meta.embedded.block.php source.php string.quoted.double.php, string.quoted.double.js meta.embedded.block.php source.php string.quoted.single.php, string.quoted.double.js meta.embedded.block.php source.php string.quoted.double.php, string.quoted.single.js meta.embedded.line.php source.php string.quoted.single.php, string.quoted.single.js meta.embedded.line.php source.php string.quoted.double.php, string.quoted.double.js meta.embedded.line.php source.php string.quoted.single.php, string.quoted.double.js meta.embedded.line.php source.php string.quoted.double.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php string.quoted.double.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php string.quoted.single.php, source.php meta.array.php string.quoted.single.php, source.php meta.array.php string.quoted.double.php</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F29766</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: source inside HTML tags - green</string>
+				<key>scope</key>
+				<string>source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php constant.numeric.index.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php constant.numeric.index.php, source.php meta.array.php constant.numeric.php</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A1F7B5</string>
 				</dict>
 			</dict>
 			<!-- HTML/XML -->
@@ -407,7 +442,7 @@
 				<key>name</key>
 				<string>HTML/XML: Inline css</string>
 				<key>scope</key>
-				<string>meta.attribute-with-value.style.html source.css, meta.attribute-with-value.style.html source.css meta.property-name.css, meta.attribute-with-value.style.html source.css meta.property-name.css support.type.property-name.css, meta.attribute-with-value.style.html source.css keyword.other.unit.css, meta.attribute-with-value.style.html source.css constant.numeric.css, meta.attribute-with-value.style.html source.css constant.other.color.rgb-value.css, meta.attribute-with-value.style.html source.css support.constant.property-value.css, meta.attribute-with-value.style.html source.css keyword.other.important.css, meta.attribute-with-value.style.html source.css support.constant.font-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css support.constant.color.w3c-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css invalid.deprecated.color.w3c-non-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css punctuation.separator.key-value.css, meta.attribute-with-value.style.html source.css meta.property-value.css punctuation.terminator.rule.css</string>
+				<string>meta.attribute-with-value.style.html source.css meta.property-value.css, meta.attribute-with-value.style.html source.css meta.property-value.css support.constant.color.w3c-extended-color-keywords.css, meta.attribute-with-value.style.html source.css meta.property-value.css support.constant.color.w3c-special-color-keyword.css, meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css meta.group.css string.quoted.double.css, meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css meta.group.css string.quoted.single.css, meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css meta.group.css string.unquoted.css, meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.begin.css, meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css meta.group.css punctuation.definition.group.end.css, meta.attribute-with-value.style.html source.css meta.property-value.css meta.function-call.css support.function.url.css, meta.attribute-with-value.style.html source.css punctuation.terminator.rule.css, meta.attribute-with-value.style.html source.css punctuation.separator.key-value.css, meta.attribute-with-value.style.html source.css, meta.attribute-with-value.style.html source.css meta.property-name.css, meta.attribute-with-value.style.html source.css meta.property-name.css support.type.property-name.css, meta.attribute-with-value.style.html source.css keyword.other.unit.css, meta.attribute-with-value.style.html source.css constant.numeric.css, meta.attribute-with-value.style.html source.css constant.other.color.rgb-value.css, meta.attribute-with-value.style.html source.css support.constant.property-value.css, meta.attribute-with-value.style.html source.css keyword.other.important.css, meta.attribute-with-value.style.html source.css support.constant.font-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css support.constant.color.w3c-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css invalid.deprecated.color.w3c-non-standard-color-name.css, meta.attribute-with-value.style.html source.css meta.property-value.css punctuation.separator.key-value.css, meta.attribute-with-value.style.html source.css meta.property-value.css punctuation.terminator.rule.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
@@ -420,7 +455,7 @@
 				<key>name</key>
 				<string>HTML/XML: Inline javascript</string>
 				<key>scope</key>
-				<string>meta.attribute-with-value.event.html source.js meta.function-call.js meta.group.js string.quoted.double.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js meta.group.js string.quoted.single.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js storage.type.function.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js variable.other.readwrite.js entity.name.function.js, meta.attribute-with-value.event.html source.js storage.type.js, meta.attribute-with-value.event.html source.js meta.object-literal.js meta.object-literal.key.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor.js meta.function-call.constructor.js variable.type.js, meta.attribute-with-value.event.html source.js keyword.other.accessor.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js support.function.dom.js, meta.attribute-with-value.event.html source.js meta.function-call.js variable.function.js, meta.attribute-with-value.event.html source.js, meta.attribute-with-value.event.html source.js constant.other.object.key.js string.unquoted.label.js, meta.attribute-with-value.event.html source.js punctuation.separator.key-value.js, meta.attribute-with-value.event.html source.js meta.function-call.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.operator.ternary.js, meta.attribute-with-value.event.html source.js variable.other.readwrite.js, meta.attribute-with-value.event.html source.js variable.other.object.js, meta.attribute-with-value.event.html source.js keyword.operator.accessor.js, meta.attribute-with-value.event.html source.js meta.property.object.js, meta.attribute-with-value.event.html source.js variable.other.class.js, meta.attribute-with-value.event.html source.js meta.property.class.js variable.other.property.static.js, meta.attribute-with-value.event.html source.js meta.function-call.static.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.static.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor keyword.operator.new.js, meta.attribute-with-value.event.html source.js meta.instance.constructor variable.function.constructor.js, meta.attribute-with-value.event.html source.js variable.language.this.js, meta.attribute-with-value.event.html source.js meta.function-call.method.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.method.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.control.flow.js, meta.attribute-with-value.event.html source.js constant.language.boolean.false.js, meta.attribute-with-value.event.html source.js constant.language.boolean.true.js, meta.attribute-with-value.event.html source.js constant.language.null.js, meta.attribute-with-value.event.html source.js constant.character.escape.js, meta.attribute-with-value.event.html source.js constant.numeric.js, meta.attribute-with-value.event.html source.js keyword.control.conditional.js, meta.attribute-with-value.event.html source.js keyword.operator.comparison.js, meta.attribute-with-value.event.html source.js keyword.operator.relational.js, meta.attribute-with-value.event.html source.js keyword.operator.arithmetic.js, meta.attribute-with-value.event.html source.js keyword.control.loop.js, meta.attribute-with-value.event.html source.js keyword.operator.js, meta.attribute-with-value.event.html source.js storage.type.function.js,  meta.attribute-with-value.event.html source.js variable.parameter.function.js, meta.attribute-with-value.event.html source.js support.type.object.dom.js, meta.attribute-with-value.event.html source.js keyword.operator.assignment.js, meta.attribute-with-value.event.html source.js support.class.builtin.js</string>
+				<string>meta.attribute-with-value.event.html source.js meta.catch.js keyword.control.trycatch.js, meta.attribute-with-value.event.html source.js meta.try.js keyword.control.trycatch.js, meta.attribute-with-value.event.html source.js meta.function-call.js meta.group.js string.quoted.double.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js meta.group.js string.quoted.single.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js storage.type.function.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js variable.other.readwrite.js entity.name.function.js, meta.attribute-with-value.event.html source.js storage.type.js, meta.attribute-with-value.event.html source.js meta.object-literal.js meta.object-literal.key.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor.js meta.function-call.constructor.js variable.type.js, meta.attribute-with-value.event.html source.js keyword.other.accessor.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js support.function.dom.js, meta.attribute-with-value.event.html source.js meta.function-call.js variable.function.js, meta.attribute-with-value.event.html source.js, meta.attribute-with-value.event.html source.js constant.other.object.key.js string.unquoted.label.js, meta.attribute-with-value.event.html source.js punctuation.separator.key-value.js, meta.attribute-with-value.event.html source.js meta.function-call.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.operator.ternary.js, meta.attribute-with-value.event.html source.js variable.other.readwrite.js, meta.attribute-with-value.event.html source.js variable.other.object.js, meta.attribute-with-value.event.html source.js keyword.operator.accessor.js, meta.attribute-with-value.event.html source.js meta.property.object.js, meta.attribute-with-value.event.html source.js variable.other.class.js, meta.attribute-with-value.event.html source.js meta.property.class.js variable.other.property.static.js, meta.attribute-with-value.event.html source.js meta.function-call.static.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.static.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor keyword.operator.new.js, meta.attribute-with-value.event.html source.js meta.instance.constructor variable.function.constructor.js, meta.attribute-with-value.event.html source.js variable.language.this.js, meta.attribute-with-value.event.html source.js meta.function-call.method.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.method.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.control.flow.js, meta.attribute-with-value.event.html source.js constant.language.boolean.false.js, meta.attribute-with-value.event.html source.js constant.language.boolean.true.js, meta.attribute-with-value.event.html source.js constant.language.null.js, meta.attribute-with-value.event.html source.js constant.character.escape.js, meta.attribute-with-value.event.html source.js constant.numeric.js, meta.attribute-with-value.event.html source.js keyword.control.conditional.js, meta.attribute-with-value.event.html source.js keyword.operator.comparison.js, meta.attribute-with-value.event.html source.js keyword.operator.relational.js, meta.attribute-with-value.event.html source.js keyword.operator.arithmetic.js, meta.attribute-with-value.event.html source.js keyword.control.loop.js, meta.attribute-with-value.event.html source.js keyword.operator.js, meta.attribute-with-value.event.html source.js storage.type.function.js,  meta.attribute-with-value.event.html source.js variable.parameter.function.js, meta.attribute-with-value.event.html source.js support.type.object.dom.js, meta.attribute-with-value.event.html source.js keyword.operator.assignment.js, meta.attribute-with-value.event.html source.js support.class.builtin.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>

@@ -1,0 +1,5 @@
+v1.2.11
+
+- Fixed color for inline JavaScript try catch.
+- Fixed color for inline CSS url() and special color names.
+- Improved highlighting of embedded PHP in HTML and JavaScript.
