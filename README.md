@@ -19,7 +19,7 @@ be installed.
 
 ##Screenshots
 
-PHP (I use [php-grammar](https://github.com/gerardroche/sublime-php-grammar))
+PHP (I strongly recommend to use [php-grammar](https://github.com/gerardroche/sublime-php-grammar))
 
 ![DarkMosquito-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Color-Scheme/master/screenshots/PHP-Source.png)
 
