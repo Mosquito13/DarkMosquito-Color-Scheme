@@ -17,7 +17,7 @@ be installed.
 ###Activating the color scheme
 `Preferences -> Color Scheme -> DarkMosquito`
 
-##Screenshots
+##Screenshots (Monaco font)
 
 PHP (I strongly recommend to use [php-grammar](https://github.com/gerardroche/sublime-php-grammar))
 
