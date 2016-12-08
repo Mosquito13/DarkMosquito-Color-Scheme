@@ -1,0 +1,9 @@
+v1.2.12
+
+- Changed color of line highlight.
+- Changed color of PHP namespaces.
+- Changed color of key-value separator in XML.
+- Changed color of preprocessor in XML.
+- Fixed highlighting of embedded PHP comments in JavaScript.
+- Fixed highlighting of embedded PHP constants in HTML and JavaScript.
+- Fixed highlighting of some color names in CSS.

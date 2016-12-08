@@ -21,7 +21,7 @@
 					<key>invisibles</key>
 					<string>#CAE2FB3D</string>
 					<key>lineHighlight</key>
-					<string>#FFFFFF2A</string>
+					<string>#FFFFFF0F</string>
 					<key>selection</key>
 					<string>#E5F3FF33</string>
 				</dict>
@@ -226,11 +226,11 @@
 				<key>name</key>
 				<string>PHP: Namespace</string>
 				<key>scope</key>
-				<string>entity.name.type.namespace.php, entity.name.namespace.php, meta.use.php</string>
+				<string>source.php meta.use.php support.other.namespace.use.php, entity.name.type.namespace.php, entity.name.namespace.php, meta.use.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#D7BAD9</string>
+					<string>#F0E8BC</string>
 				</dict>
 			</dict>
 			<dict>
@@ -386,11 +386,22 @@
 				<key>name</key>
 				<string>PHP: source inside HTML tags - green</string>
 				<key>scope</key>
-				<string>source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php constant.numeric.index.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php constant.numeric.index.php, source.php meta.array.php constant.numeric.php</string>
+				<string>source.php constant.numeric.php, source.php constant.language.boolean.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php constant.numeric.index.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php constant.numeric.index.php, source.php meta.array.php constant.numeric.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>#A1F7B5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: Comment</string>
+				<key>scope</key>
+				<string>comment.block.js meta.embedded.line.php source.php comment.block.php, comment.block.js meta.embedded.line.php source.php comment.line.number-sign.php, comment.block.js meta.embedded.line.php source.php comment.line.double-slash.php, comment.line.double-slash.js meta.embedded.line.php source.php comment.block.php, comment.line.double-slash.js meta.embedded.line.php source.php comment.line.number-sign.php, comment.line.double-slash.js meta.embedded.line.php source.php comment.line.double-slash.php</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#898989</string>
 				</dict>
 			</dict>
 			<!-- HTML/XML -->
@@ -420,7 +431,7 @@
 				<key>name</key>
 				<string>HTML/XML: Tag separator key-value</string>
 				<key>scope</key>
-				<string>punctuation.separator.key-value.html</string>
+				<string>punctuation.separator.key-value.html, punctuation.separator.key-value.xml</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -480,7 +491,7 @@
 				<key>name</key>
 				<string>XML: Preprocessor</string>
 				<key>scope</key>
-				<string>text.xml meta.tag.preprocessor.xml entity.name.tag.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml, meta.tag.sgml.doctype</string>
+				<string>text.xml meta.tag.preprocessor.xml entity.name.tag.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.begin.xml, text.xml meta.tag.preprocessor.xml punctuation.definition.tag.end.xml, meta.tag.sgml.doctype</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -603,7 +614,7 @@
 				<key>name</key>
 				<string>CSS: Color name</string>
 				<key>scope</key>
-				<string>support.constant.color.w3c-standard-color-name.css, invalid.deprecated.color.w3c-non-standard-color-name.css</string>
+				<string>support.constant.color.w3c-extended-color-keywords.css, support.constant.color.w3c-standard-color-name.css, invalid.deprecated.color.w3c-non-standard-color-name.css</string>
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
