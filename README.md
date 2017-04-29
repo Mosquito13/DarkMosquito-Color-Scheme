@@ -1,7 +1,7 @@
-#DarkMosquito Color Scheme for Sublime Text
+# DarkMosquito Color Scheme for Sublime Text
 A dark color scheme for Sublime Text, the colors are based on Google Chrome Dev Tools (Dark Theme)
 
-##Installation
+## Installation
 
 ### Using [Package Control](https://sublime.wbond.net)
 
@@ -9,15 +9,15 @@ Open `Tools -> Command Palette...`. Search for `Package Control: Install Package
 the available packages to show up and then search for `DarkMosquito Color Scheme`. Click enter and the theme should
 be installed.
 
-###Download Manually
+### Download Manually
 * Download the files using the GitHub .zip download option
 * Unzip the files
 * Copy the folder to your Sublime Text `Packages` directory
 
-###Activating the color scheme
+### Activating the color scheme
 `Preferences -> Color Scheme -> DarkMosquito`
 
-##Screenshots (Monaco font)
+## Screenshots (Monaco font)
 
 PHP (I strongly recommend to use [php-grammar](https://github.com/gerardroche/sublime-php-grammar))
 
