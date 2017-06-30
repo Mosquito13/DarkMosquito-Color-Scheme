@@ -1,0 +1,6 @@
+v1.2.13
+
+- Added support to BabelJS for JavaScript and React JSX syntax
+    - Of course you'll need Babel package (https://packagecontrol.io/packages/Babel) and set "JavaScript (Babel)" as the syntax of your files.
+- Fixed color of namespaces in PHP.
+- Fixed color of interfaces in PHP.

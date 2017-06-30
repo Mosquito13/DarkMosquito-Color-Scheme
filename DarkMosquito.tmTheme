@@ -226,7 +226,7 @@
 				<key>name</key>
 				<string>PHP: Namespace</string>
 				<key>scope</key>
-				<string>source.php meta.use.php support.other.namespace.use.php, entity.name.type.namespace.php, entity.name.namespace.php, meta.use.php</string>
+				<string>meta.other.inherited-class.php support.other.namespace.php, source.php meta.use.php support.other.namespace.use.php, entity.name.type.namespace.php, entity.name.namespace.php, meta.use.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -338,9 +338,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Class name</string>
+				<string>PHP: Class/Interface name</string>
 				<key>scope</key>
-				<string>meta.class.php entity.name.class.php</string>
+				<string>meta.interface.php entity.name.type.interface.php, meta.class.php entity.name.class.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -772,31 +772,9 @@
 			<!-- JAVASCRIPT -->
 			<dict>
 				<key>name</key>
-				<string>JS: Storage</string>
+				<string>JS: Object properties</string>
 				<key>scope</key>
-				<string>meta.function.declaration.js storage.type.function.js, storage.type.js, variable.language.this.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#9A7FD5</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Strings</string>
-				<key>scope</key>
-				<string>string.quoted.single.js constant.character.escape.js, string.quoted.double.js constant.character.escape.js, string.quoted.double.js, string.quoted.single.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#F28B54</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Operator</string>
-				<key>scope</key>
-				<string>keyword.operator.bitwise.js, keyword.operator.ternary.js, keyword.operator.assignment.augmented.js, keyword.operator.relational.js, keyword.operator.arithmetic.js, keyword.operator.logical.js, keyword.operator.comparison.js, meta.conditional.js meta.group.js keyword.operator.logical.js, keyword.operator.assignment.js</string>
+				<string>source.js meta.prototype.access.js support.constant.prototype.js, source.js meta.function.declaration.js meta.property.object.js entity.name.function.js, source.js meta.function.declaration.js support.constant.prototype.js, source.js meta.object-literal.key.js meta.function.declaration.js entity.name.function.js, source.js meta.function-call.method.js variable.function.js, source.js meta.property.object.js, source.js meta.object-literal.key.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -805,9 +783,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>name</string>
+				<string>JS: Dollar</string>
 				<key>scope</key>
-				<string>support.class.dollar.js, variable.other.dollar.js, variable.other.object.dollar.js, variable.other.dollar.only.js punctuation.dollar.js</string>
+				<string>source.js punctuation.dollar.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -816,9 +794,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Support</string>
+				<string>JS: Accessor</string>
 				<key>scope</key>
-				<string>support.function.js, support.type.object.dom.js, support.module.node.js, support.class.error.js, support.class.builtin.js, support.type.object.module.js, support.type.object.node.js, support.class.js</string>
+				<string>source.js support.module.node.js, source.js meta.function-call.js variable.function.js, source.js support.class.js, source.js keyword.other.accessor.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -827,9 +805,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Function call</string>
+				<string>JS: Constructor call</string>
 				<key>scope</key>
-				<string>meta.function-call.js variable.function.js</string>
+				<string>source.js meta.instance.constructor.js meta.function-call.constructor.js variable.type.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -838,9 +816,32 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Function declaration</string>
+				<string>JS: String and Regex</string>
 				<key>scope</key>
-				<string>meta.function.declaration.js entity.name.function.js</string>
+				<string>source.js string.quoted.double.js, source.js string.quoted.single.js, source.js string.quoted.single.js constant.character.escape.js, source.js string.quoted.double.js constant.character.escape.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<!-- JAVASCRIPT - BABEL -->
+			<dict>
+				<key>name</key>
+				<string>BabelJS: Storage</string>
+				<key>scope</key>
+				<string>source.js variable.language.this.js, source.js storage.type.js, source.js storage.type.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9A7FD5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>BabelJS: Function name and arguments</string>
+				<key>scope</key>
+				<string>source.js meta.function.js variable.parameter.function.js, source.js entity.name.function.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -849,9 +850,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Object function call</string>
+				<string>BabelJS: Operator</string>
 				<key>scope</key>
-				<string>meta.function-call.method.js variable.function.js</string>
+				<string>source.js keyword.operator.spread.js, source.js keyword.operator.bitwise.js, source.js keyword.operator.assignment.augmented.js, source.js keyword.operator.assignment.js, source.js keyword.operator.comparison.js, source.js keyword.operator.logical.js, source.js keyword.operator.relational.js, source.js keyword.operator.arithmetic.js, source.js keyword.operator.ternary.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -860,9 +861,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Objects</string>
+				<string>BabelJS: Variables and Accessor operator</string>
 				<key>scope</key>
-				<string>keyword.other.accessor.js, meta.function-call.constructor.js variable.type.js, variable.other.object.js</string>
+				<string>source.js meta.switch.js keyword.operator.ternary.js, source.js variable.language.arguments.js, source.js variable.language.self.js, source.js support.class.error.js, source.js support.class.builtin.js, source.js constant.other.object.key.js punctuation.separator.key-value.js, source.js variable.other.class.js, source.js variable.other.object.js, source.js keyword.operator.accessor.js, source.js variable.other.readwrite.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -871,9 +872,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Object property</string>
+				<string>BabelJS: Object properties</string>
 				<key>scope</key>
-				<string>meta.property.object.dollar.js, meta.object-literal.js meta.object-literal.key.js meta.function.declaration.js entity.name.function.js, meta.object-literal.js meta.object-literal.key.js, meta.property.object.js entity.name.function.js, meta.property.object.js</string>
+				<string>source.js meta.function.json.js string.unquoted.js entity.name.function.js, source.js variable.language.constructor.js, source.js meta.function.static.js entity.name.function.js, source.js meta.function.prototype.js entity.name.function.js, source.js variable.language.prototype.js, source.js variable.function.constructor.js, source.js meta.property.class.js variable.other.property.static.js, source.js meta.function-call.static.without-arguments.js variable.function.js, source.js meta.function-call.static.with-arguments.js variable.function.js, source.js meta.function-call.method.without-arguments.js variable.function.js, source.js meta.function-call.method.with-arguments.js variable.function.js, source.js meta.property.object.js variable.other.object.js, source.js constant.other.object.key.js string.unquoted.label.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -882,20 +883,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Prototype</string>
+				<string>BabelJS: String</string>
 				<key>scope</key>
-				<string>support.constant.prototype.js</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#D2C057</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>JS: Regex</string>
-				<key>scope</key>
-				<string>string.regexp.js keyword.control.anchor.regexp, string.regexp.js keyword.other.js</string>
+				<string>source.js string.quoted.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -904,9 +894,75 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>JS: Variables</string>
+				<string>BabelJS: Function call</string>
 				<key>scope</key>
-				<string>variable.language.arguments.js, variable.other.readwrite.js</string>
+				<string>source.js variable.function.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>BabelJS: Support</string>
+				<key>scope</key>
+				<string>source.js support.type.object.console.js, source.js support.type.object.node.js, source.js support.type.object.module.js, source.js support.type.object.dom.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F0E8BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>BabelJS: Classes</string>
+				<key>scope</key>
+				<string>source.js variable.other.class.js, source.js meta.function-call.static.without-arguments.js variable.other.class.js, source.js meta.function-call.static.with-arguments.js variable.other.class.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F0E8BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>BabelJS: Regex and escapes</string>
+				<key>scope</key>
+				<string>source.js string.regexp.js constant.other.character-class.set.regexp keyword.operator.negation.regexp, source.js string.regexp.js keyword.control.anchor.regexp, source.js string.quoted.js constant.character.escape.js, source.js string.regexp.js keyword.other.js, source.js string.regexp.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>BabelJS: Constants</string>
+				<key>scope</key>
+				<string>source.js variable.other.constant.js</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A1F7B5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>BabelJSX: Tag attribute</string>
+				<key>scope</key>
+				<string>source.js meta.jsx.js entity.other.attribute-name.jsx</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>BabelJSX: Tag operator assignment</string>
+				<key>scope</key>
+				<string>source.js meta.jsx.js keyword.operator.assignment.jsx</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
