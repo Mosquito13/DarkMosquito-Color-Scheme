@@ -31,7 +31,7 @@ CSS
 
 ![DarkMosquito-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Color-Scheme/master/screenshots/CSS-Source.png)
 
-Javascript
+JavaScript ([Babel](https://packagecontrol.io/packages/Babel))
 
 ![DarkMosquito-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Color-Scheme/master/screenshots/Javascript-Source.png)
 
