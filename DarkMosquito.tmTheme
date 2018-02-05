@@ -219,7 +219,7 @@
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
-					<string/>
+					<string />
 				</dict>
 			</dict>
 			<dict>
@@ -294,7 +294,7 @@
 				<key>name</key>
 				<string>PHP: SQL fields and aliases</string>
 				<key>scope</key>
-				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql constant.other.table-name.sql, source.php meta.block.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql constant.other.database-name.sql, source.php string.quoted.single.php meta.string-contents.quoted.single.php source.sql constant.other.database-name.sql, source.php string.quoted.single.php meta.string-contents.quoted.single.php source.sql constant.other.table-name.sql</string>
+				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql constant.other.table-name.sql, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql constant.other.database-name.sql, source.php string.quoted.single.php meta.string-contents.quoted.single.php source.sql constant.other.database-name.sql, source.php string.quoted.single.php meta.string-contents.quoted.single.php source.sql constant.other.table-name.sql</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -316,7 +316,7 @@
 				<key>name</key>
 				<string>PHP: Expressions braces inside strings</string>
 				<key>scope</key>
-				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.expression.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.end.php</string>
+				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.expression.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.end.php, string.quoted.double.html source.php meta.function-call.php meta.group.php, string.quoted.single.html source.php meta.function-call.php meta.group.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql meta.function-call.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.group.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -327,11 +327,33 @@
 				<key>name</key>
 				<string>PHP: embedded php</string>
 				<key>scope</key>
-				<string>source.css punctuation.section.embedded.begin.php, source.css punctuation.section.embedded.end.php, source.css source.php punctuation.terminator.expression.php, source.css source.php punctuation.section.block.begin.php, source.css source.php punctuation.section.block.end.php, source.css source.php meta.group.php</string>
+				<string>source.css punctuation.section.embedded.begin.php, source.css punctuation.section.embedded.end.php, source.css source.php punctuation.terminator.expression.php, source.css source.php punctuation.section.block.begin.php, source.css source.php punctuation.section.block.end.php, source.css source.php meta.group.php, meta.tag.inline.any.html string.quoted.double.html punctuation.section.embedded.begin.php, meta.tag.inline.any.html string.quoted.double.html punctuation.section.embedded.end.php, meta.tag.inline.any.html string.quoted.single.html punctuation.section.embedded.begin.php, meta.tag.inline.any.html string.quoted.single.html punctuation.section.embedded.end.php, source.js.embedded.html string.quoted.double.js punctuation.section.embedded.begin.php, source.js.embedded.html string.quoted.double.js punctuation.section.embedded.end.php, source.js.embedded.html string.quoted.single.js punctuation.section.embedded.begin.php, source.js.embedded.html string.quoted.single.js punctuation.section.embedded.end.php, source.js.embedded.html string.quoted.single.js source.php punctuation.terminator.expression.php, source.js.embedded.html string.quoted.double.js source.php punctuation.terminator.expression.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: embedded string</string>
+				<key>scope</key>
+				<string>string.quoted.double.html source.php string.quoted.single.php meta.string-contents.quoted.single.php, string.quoted.double.html source.php string.quoted.single.php, string.quoted.double.html source.php string.quoted.double.php meta.string-contents.quoted.double.php, string.quoted.double.html source.php string.quoted.double.php, string.quoted.double.html source.php string.quoted.single.php meta.string-contents.quoted.single.php, string.quoted.single.html source.php string.quoted.single.php, string.quoted.single.html source.php string.quoted.double.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql meta.item-access.arguments.php, source.js.embedded.html string.quoted.single.js source.php string.quoted.single.php, source.js.embedded.html string.quoted.single.js source.php string.quoted.double.php, source.js.embedded.html string.quoted.double.js source.php string.quoted.single.php, source.js.embedded.html string.quoted.double.js source.php string.quoted.double.php</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F29766</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: embedded constant</string>
+				<key>scope</key>
+				<string>source.js.embedded.html string.quoted.double.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.numeric.php, source.php string.quoted.double.php source.sql string.quoted.single.sql constant.numeric.php</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#A1F7B5</string>
 				</dict>
 			</dict>
 			<!-- HTML/XML -->
