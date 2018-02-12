@@ -349,7 +349,7 @@
 				<key>name</key>
 				<string>PHP: embedded constant</string>
 				<key>scope</key>
-				<string>source.js.embedded.html string.quoted.double.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.numeric.php, source.php string.quoted.double.php source.sql string.quoted.single.sql constant.numeric.php</string>
+				<string>embedding.php text.html.basic source.php string.quoted.double.php constant.numeric.php, embedding.php text.html.basic source.php string.quoted.single.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.numeric.php, source.php string.quoted.double.php source.sql string.quoted.single.sql constant.numeric.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
