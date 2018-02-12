@@ -1,0 +1,3 @@
+v1.2.14
+
+- Rewrited PHP syntax highlighting to work without PHPGrammar - Thanks @klisman99.

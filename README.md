@@ -19,7 +19,7 @@ be installed.
 
 ## Screenshots (Monaco font)
 
-PHP (I strongly recommend to use [php-grammar](https://github.com/gerardroche/sublime-php-grammar))
+PHP
 
 ![DarkMosquito-Color-Scheme](https://raw.github.com/Mosquito13/DarkMosquito-Color-Scheme/master/screenshots/PHP-Source.png)
 
