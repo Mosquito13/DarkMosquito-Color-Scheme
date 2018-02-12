@@ -219,14 +219,14 @@
 				<key>settings</key>
 				<dict>
 					<key>fontStyle</key>
-					<string/>
+					<string />
 				</dict>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Namespace</string>
+				<string>PHP: Namespaces and Class</string>
 				<key>scope</key>
-				<string>meta.other.inherited-class.php support.other.namespace.php, source.php meta.use.php support.other.namespace.use.php, entity.name.type.namespace.php, entity.name.namespace.php, meta.use.php</string>
+				<string>source.php meta.use.php meta.path.php support.other.namespace.php, source.php meta.use.php meta.path.php support.class.php, source.php meta.use.php meta.path.php punctuation.separator.namespace.php, source.php meta.namespace.php meta.path.php entity.name.namespace.php, source.php meta.class.php entity.name.class.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -235,20 +235,33 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Class property</string>
+				<string>PHP: Static calls</string>
 				<key>scope</key>
-				<string>variable.other.property.php</string>
+				<string>source.php meta.function-call.static.php variable.function.php</string>
 				<key>settings</key>
 				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
 					<key>foreground</key>
-					<string>#9BBBDC</string>
+					<string>#D5D5D5</string>
 				</dict>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: SQL Functions</string>
+				<string>PHP: Method and function calls</string>
 				<key>scope</key>
-				<string>source.sql.embedded.php support.function.string.sql, string.quoted.double.sql.php source.sql.embedded.php support.function.aggregate.sql</string>
+				<string>source.php meta.function-call.method.php variable.function.php, source.php meta.function-call.php variable.function.php</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: Accessors</string>
+				<key>scope</key>
+				<string>source.php punctuation.accessor.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -257,22 +270,20 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Static call</string>
+				<string>PHP: Object property</string>
 				<key>scope</key>
-				<string>meta.function-call.static.php variable.function.php, meta.function-call.static.php</string>
+				<string>source.php variable.other.member.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
-					<string>#D5D5D5</string>
-					<key>fontStyle</key>
-					<string>italic</string>
+					<string>#9BBBDC</string>
 				</dict>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Function name</string>
+				<string>PHP: Class method declaration</string>
 				<key>scope</key>
-				<string>meta.function.php entity.name.function.php</string>
+				<string>source.php entity.name.function.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -281,31 +292,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: SQL Constant numeric</string>
-				<key>scope</key>
-				<string>string.quoted.single.sql.php source.sql.embedded.php constant.numeric.sql, meta.string-contents.quoted.double.php source.sql constant.numeric.sql, string.quoted.double.sql.php source.sql.embedded.php constant.numeric.sql</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#F071BC</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>PHP: SQL String</string>
-				<key>scope</key>
-				<string>meta.string-contents.quoted.double.php source.sql string.quoted.single.sql, string.quoted.double.sql.php source.sql.embedded.php string.quoted.single.sql</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#F071BC</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
 				<string>PHP: SQL fields and aliases</string>
 				<key>scope</key>
-				<string>string.quoted.single.sql.php source.sql.embedded.php constant.other.table-name.sql, string.quoted.single.sql.php source.sql.embedded.php constant.other.database-name.sql, meta.string-contents.quoted.double.php source.sql constant.other.table-name.sql, meta.string-contents.quoted.double.php source.sql constant.other.database-name.sql, string.quoted.double.sql source.sql.embedded.php constant.other.database-name.sql, string.quoted.double.sql source.sql.embedded.php constant.other.table-name.sql</string>
+				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql constant.other.table-name.sql, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql constant.other.database-name.sql, source.php string.quoted.single.php meta.string-contents.quoted.single.php source.sql constant.other.database-name.sql, source.php string.quoted.single.php meta.string-contents.quoted.single.php source.sql constant.other.table-name.sql</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -314,22 +303,31 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Tags inside HTML elements</string>
+				<string>PHP: SQL constants</string>
 				<key>scope</key>
-				<string>meta.tag.structure.any.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php, string.quoted.single.html meta.embedded.line.php, string.quoted.double.html meta.embedded.line.php</string>
+				<string>source.php string.quoted.single.php meta.string-contents.quoted.single.php source.sql constant.numeric.sql, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql constant.numeric.sql, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql string.quoted.single.sql</string>
 				<key>settings</key>
 				<dict>
-					<key>fontStyle</key>
-					<string/>
+					<key>foreground</key>
+					<string>#F071BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: Expressions braces inside strings</string>
+				<key>scope</key>
+				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.expression.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.end.php, string.quoted.double.html source.php meta.function-call.php meta.group.php, string.quoted.single.html source.php meta.function-call.php meta.group.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql meta.function-call.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.group.php</string>
+				<key>settings</key>
+				<dict>
 					<key>foreground</key>
 					<string>#D5D5D5</string>
 				</dict>
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Function call</string>
+				<string>PHP: embedded php</string>
 				<key>scope</key>
-				<string>meta.function-call.php variable.function.php, meta.function-call.method.php variable.function.php</string>
+				<string>source.css punctuation.section.embedded.begin.php, source.css punctuation.section.embedded.end.php, source.css source.php punctuation.terminator.expression.php, source.css source.php punctuation.section.block.begin.php, source.css source.php punctuation.section.block.end.php, source.css source.php meta.group.php, meta.tag.inline.any.html string.quoted.double.html punctuation.section.embedded.begin.php, meta.tag.inline.any.html string.quoted.double.html punctuation.section.embedded.end.php, meta.tag.inline.any.html string.quoted.single.html punctuation.section.embedded.begin.php, meta.tag.inline.any.html string.quoted.single.html punctuation.section.embedded.end.php, source.js.embedded.html string.quoted.double.js punctuation.section.embedded.begin.php, source.js.embedded.html string.quoted.double.js punctuation.section.embedded.end.php, source.js.embedded.html string.quoted.single.js punctuation.section.embedded.begin.php, source.js.embedded.html string.quoted.single.js punctuation.section.embedded.end.php, source.js.embedded.html string.quoted.single.js source.php punctuation.terminator.expression.php, source.js.embedded.html string.quoted.double.js source.php punctuation.terminator.expression.php, text.html.basic string.quoted.single.html punctuation.section.embedded.begin.php, text.html.basic string.quoted.single.html punctuation.section.embedded.end.php, text.html.basic string.quoted.double.html punctuation.section.embedded.begin.php, text.html.basic string.quoted.double.html punctuation.section.embedded.end.php, text.html.basic source.js string.quoted.double.js punctuation.section.embedded.begin.php, text.html.basic source.js string.quoted.double.js punctuation.section.embedded.end.php, text.html.basic source.js string.quoted.single.js punctuation.section.embedded.begin.php, text.html.basic source.js string.quoted.single.js punctuation.section.embedded.end.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -338,44 +336,9 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: Class/Interface name</string>
+				<string>PHP: embedded string</string>
 				<key>scope</key>
-				<string>meta.interface.php entity.name.type.interface.php, meta.class.php entity.name.class.php</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#F0E8BC</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>PHP: source inside HTML tags - blue</string>
-				<key>scope</key>
-				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.index.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.global.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php variable.other.global.safer.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.index.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.global.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php variable.other.global.safer.php punctuation.definition.variable.php</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#5DB0D7</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>PHP: source inside HTML tags - white</string>
-				<key>scope</key>
-				<string>meta.embedded.line.php source.php, string.quoted.single.js meta.embedded.block.php source.php, string.quoted.double.js meta.embedded.block.php source.php, punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php, source.php string.quoted.double.sql.php source.sql.embedded.php punctuation.definition.variable.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php punctuation.definition.array.begin.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php punctuation.definition.array.end.php, source.php string.quoted.double.sql.php source.sql.embedded.php punctuation.section.array.begin.php, source.php string.quoted.double.sql.php source.sql.embedded.php punctuation.section.array.end.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.function-call.object.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.function-call.object.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.variable.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php punctuation.definition.array.end.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php punctuation.definition.array.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.section.array.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.section.array.end.php, meta.embedded.line.php source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.variable.php</string>
-				<key>settings</key>
-				<dict>
-					<key>fontStyle</key>
-					<string/>
-					<key>foreground</key>
-					<string>#D5D5D5</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>PHP: source inside HTML tags - orange</string>
-				<key>scope</key>
-				<string>source.php string.quoted.double.php, source.php string.quoted.single.php, string.quoted.single.js meta.embedded.block.php source.php string.quoted.single.php, string.quoted.single.js meta.embedded.block.php source.php string.quoted.double.php, string.quoted.double.js meta.embedded.block.php source.php string.quoted.single.php, string.quoted.double.js meta.embedded.block.php source.php string.quoted.double.php, string.quoted.single.js meta.embedded.line.php source.php string.quoted.single.php, string.quoted.single.js meta.embedded.line.php source.php string.quoted.double.php, string.quoted.double.js meta.embedded.line.php source.php string.quoted.single.php, string.quoted.double.js meta.embedded.line.php source.php string.quoted.double.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php string.quoted.double.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php string.quoted.single.php, source.php meta.array.php string.quoted.single.php, source.php meta.array.php string.quoted.double.php</string>
+				<string>string.quoted.double.html source.php string.quoted.single.php meta.string-contents.quoted.single.php, string.quoted.double.html source.php string.quoted.single.php, string.quoted.double.html source.php string.quoted.double.php meta.string-contents.quoted.double.php, string.quoted.double.html source.php string.quoted.double.php, string.quoted.double.html source.php string.quoted.single.php meta.string-contents.quoted.single.php, string.quoted.single.html source.php string.quoted.single.php, string.quoted.single.html source.php string.quoted.double.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql meta.item-access.arguments.php, source.js.embedded.html string.quoted.single.js source.php string.quoted.single.php, source.js.embedded.html string.quoted.single.js source.php string.quoted.double.php, source.js.embedded.html string.quoted.double.js source.php string.quoted.single.php, source.js.embedded.html string.quoted.double.js source.php string.quoted.double.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -384,24 +347,13 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>PHP: source inside HTML tags - green</string>
+				<string>PHP: embedded constant</string>
 				<key>scope</key>
-				<string>source.php constant.numeric.php, source.php constant.language.boolean.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.other.php, source.php string.quoted.double.sql.php source.sql.embedded.php constant.numeric.index.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.array.php constant.numeric.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php constant.numeric.index.php, source.php meta.array.php constant.numeric.php</string>
+				<string>embedding.php text.html.basic source.php string.quoted.double.php constant.numeric.php, embedding.php text.html.basic source.php string.quoted.single.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.numeric.php, source.php string.quoted.double.php source.sql string.quoted.single.sql constant.numeric.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
 					<string>#A1F7B5</string>
-				</dict>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>PHP: Comment</string>
-				<key>scope</key>
-				<string>comment.block.js meta.embedded.line.php source.php comment.block.php, comment.block.js meta.embedded.line.php source.php comment.line.number-sign.php, comment.block.js meta.embedded.line.php source.php comment.line.double-slash.php, comment.line.double-slash.js meta.embedded.line.php source.php comment.block.php, comment.line.double-slash.js meta.embedded.line.php source.php comment.line.number-sign.php, comment.line.double-slash.js meta.embedded.line.php source.php comment.line.double-slash.php</string>
-				<key>settings</key>
-				<dict>
-					<key>foreground</key>
-					<string>#898989</string>
 				</dict>
 			</dict>
 			<!-- HTML/XML -->
@@ -466,7 +418,7 @@
 				<key>name</key>
 				<string>HTML/XML: Inline javascript</string>
 				<key>scope</key>
-				<string>meta.attribute-with-value.event.html source.js meta.catch.js keyword.control.trycatch.js, meta.attribute-with-value.event.html source.js meta.try.js keyword.control.trycatch.js, meta.attribute-with-value.event.html source.js meta.function-call.js meta.group.js string.quoted.double.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js meta.group.js string.quoted.single.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js storage.type.function.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js variable.other.readwrite.js entity.name.function.js, meta.attribute-with-value.event.html source.js storage.type.js, meta.attribute-with-value.event.html source.js meta.object-literal.js meta.object-literal.key.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor.js meta.function-call.constructor.js variable.type.js, meta.attribute-with-value.event.html source.js keyword.other.accessor.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js support.function.dom.js, meta.attribute-with-value.event.html source.js meta.function-call.js variable.function.js, meta.attribute-with-value.event.html source.js, meta.attribute-with-value.event.html source.js constant.other.object.key.js string.unquoted.label.js, meta.attribute-with-value.event.html source.js punctuation.separator.key-value.js, meta.attribute-with-value.event.html source.js meta.function-call.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.operator.ternary.js, meta.attribute-with-value.event.html source.js variable.other.readwrite.js, meta.attribute-with-value.event.html source.js variable.other.object.js, meta.attribute-with-value.event.html source.js keyword.operator.accessor.js, meta.attribute-with-value.event.html source.js meta.property.object.js, meta.attribute-with-value.event.html source.js variable.other.class.js, meta.attribute-with-value.event.html source.js meta.property.class.js variable.other.property.static.js, meta.attribute-with-value.event.html source.js meta.function-call.static.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.static.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor keyword.operator.new.js, meta.attribute-with-value.event.html source.js meta.instance.constructor variable.function.constructor.js, meta.attribute-with-value.event.html source.js variable.language.this.js, meta.attribute-with-value.event.html source.js meta.function-call.method.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.method.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.control.flow.js, meta.attribute-with-value.event.html source.js constant.language.boolean.false.js, meta.attribute-with-value.event.html source.js constant.language.boolean.true.js, meta.attribute-with-value.event.html source.js constant.language.null.js, meta.attribute-with-value.event.html source.js constant.character.escape.js, meta.attribute-with-value.event.html source.js constant.numeric.js, meta.attribute-with-value.event.html source.js keyword.control.conditional.js, meta.attribute-with-value.event.html source.js keyword.operator.comparison.js, meta.attribute-with-value.event.html source.js keyword.operator.relational.js, meta.attribute-with-value.event.html source.js keyword.operator.arithmetic.js, meta.attribute-with-value.event.html source.js keyword.control.loop.js, meta.attribute-with-value.event.html source.js keyword.operator.js, meta.attribute-with-value.event.html source.js storage.type.function.js,  meta.attribute-with-value.event.html source.js variable.parameter.function.js, meta.attribute-with-value.event.html source.js support.type.object.dom.js, meta.attribute-with-value.event.html source.js keyword.operator.assignment.js, meta.attribute-with-value.event.html source.js support.class.builtin.js</string>
+				<string>meta.attribute-with-value.event.html source.js keyword.other.js, meta.attribute-with-value.event.html source.js meta.catch.js keyword.control.trycatch.js, meta.attribute-with-value.event.html source.js meta.try.js keyword.control.trycatch.js, meta.attribute-with-value.event.html source.js meta.function-call.js meta.group.js string.quoted.double.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js meta.group.js string.quoted.single.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js storage.type.function.js, meta.attribute-with-value.event.html source.js meta.function.declaration.js variable.other.readwrite.js entity.name.function.js, meta.attribute-with-value.event.html source.js storage.type.js, meta.attribute-with-value.event.html source.js meta.object-literal.js meta.object-literal.key.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor.js meta.function-call.constructor.js variable.type.js, meta.attribute-with-value.event.html source.js keyword.other.accessor.js, meta.attribute-with-value.event.html source.js meta.function-call.method.js support.function.dom.js, meta.attribute-with-value.event.html source.js meta.function-call.js variable.function.js, meta.attribute-with-value.event.html source.js, meta.attribute-with-value.event.html source.js constant.other.object.key.js string.unquoted.label.js, meta.attribute-with-value.event.html source.js punctuation.separator.key-value.js, meta.attribute-with-value.event.html source.js meta.function-call.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.operator.ternary.js, meta.attribute-with-value.event.html source.js variable.other.readwrite.js, meta.attribute-with-value.event.html source.js variable.other.object.js, meta.attribute-with-value.event.html source.js keyword.operator.accessor.js, meta.attribute-with-value.event.html source.js meta.property.object.js, meta.attribute-with-value.event.html source.js variable.other.class.js, meta.attribute-with-value.event.html source.js meta.property.class.js variable.other.property.static.js, meta.attribute-with-value.event.html source.js meta.function-call.static.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.static.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.instance.constructor keyword.operator.new.js, meta.attribute-with-value.event.html source.js meta.instance.constructor variable.function.constructor.js, meta.attribute-with-value.event.html source.js variable.language.this.js, meta.attribute-with-value.event.html source.js meta.function-call.method.with-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js meta.function-call.method.without-arguments.js variable.function.js, meta.attribute-with-value.event.html source.js keyword.control.flow.js, meta.attribute-with-value.event.html source.js constant.language.boolean.false.js, meta.attribute-with-value.event.html source.js constant.language.boolean.true.js, meta.attribute-with-value.event.html source.js constant.language.null.js, meta.attribute-with-value.event.html source.js constant.character.escape.js, meta.attribute-with-value.event.html source.js constant.numeric.js, meta.attribute-with-value.event.html source.js keyword.control.conditional.js, meta.attribute-with-value.event.html source.js keyword.operator.comparison.js, meta.attribute-with-value.event.html source.js keyword.operator.relational.js, meta.attribute-with-value.event.html source.js keyword.operator.arithmetic.js, meta.attribute-with-value.event.html source.js keyword.control.loop.js, meta.attribute-with-value.event.html source.js keyword.operator.js, meta.attribute-with-value.event.html source.js storage.type.function.js,  meta.attribute-with-value.event.html source.js variable.parameter.function.js, meta.attribute-with-value.event.html source.js support.type.object.dom.js, meta.attribute-with-value.event.html source.js keyword.operator.assignment.js, meta.attribute-with-value.event.html source.js support.class.builtin.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
