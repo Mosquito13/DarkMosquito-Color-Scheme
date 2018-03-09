@@ -226,7 +226,7 @@
 				<key>name</key>
 				<string>PHP: Namespaces and Class</string>
 				<key>scope</key>
-				<string>source.php meta.use.php meta.path.php support.other.namespace.php, source.php meta.use.php meta.path.php support.class.php, source.php meta.use.php meta.path.php punctuation.separator.namespace.php, source.php meta.namespace.php meta.path.php entity.name.namespace.php, source.php meta.class.php entity.name.class.php</string>
+				<string>source.php meta.use.php meta.path.php support.other.namespace.php, source.php meta.use.php meta.path.php support.class.php, source.php meta.use.php meta.path.php punctuation.separator.namespace.php, source.php meta.namespace.php meta.path.php entity.name.namespace.php, source.php meta.class.php entity.name.class.php, source.php entity.name.namespace.php support.other.namespace.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -310,6 +310,17 @@
 				<dict>
 					<key>foreground</key>
 					<string>#F071BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>PHP: SQL keywords</string>
+				<key>scope</key>
+				<string>source.php string.quoted.single.php source.sql support.function.string.sql, source.php string.quoted.double.php source.sql support.function.string.sql</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9A7FD5</string>
 				</dict>
 			</dict>
 			<dict>
