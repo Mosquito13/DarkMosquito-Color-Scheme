@@ -261,7 +261,7 @@
 				<key>name</key>
 				<string>PHP: Accessors</string>
 				<key>scope</key>
-				<string>source.php punctuation.accessor.php</string>
+				<string>source.php punctuation.accessor.php, source.php punctuation.accessor.arrow.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -327,7 +327,7 @@
 				<key>name</key>
 				<string>PHP: Expressions braces inside strings</string>
 				<key>scope</key>
-				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.expression.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.end.php, string.quoted.double.html source.php meta.function-call.php meta.group.php, string.quoted.single.html source.php meta.function-call.php meta.group.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql meta.function-call.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.group.php</string>
+				<string>source.php string.quoted.double.php meta.string-contents.quoted.double.php punctuation.definition.expression.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.begin.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php meta.item-access.php punctuation.section.brackets.end.php, string.quoted.double.html source.php meta.function-call.php meta.group.php, string.quoted.single.html source.php meta.function-call.php meta.group.php, source.php string.quoted.double.php meta.string-contents.quoted.double.php source.sql meta.function-call.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.double.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.begin.php, source.js.embedded.html string.quoted.single.js source.php meta.item-access.php punctuation.section.brackets.end.php, source.js.embedded.html string.quoted.single.js source.php meta.group.php, source.js.embedded.html string.quoted.double.js source.php meta.group.php, source.php string.quoted.double.php punctuation.section.group.begin.php, source.php string.quoted.double.php punctuation.section.group.end.php, source.php punctuation.section.group.begin.php, source.php punctuation.section.group.end.php, source.php punctuation.terminator.expression.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -360,7 +360,7 @@
 				<key>name</key>
 				<string>PHP: embedded constant</string>
 				<key>scope</key>
-				<string>embedding.php text.html.basic source.php string.quoted.double.php constant.numeric.php, embedding.php text.html.basic source.php string.quoted.single.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.numeric.php, source.php string.quoted.double.php source.sql string.quoted.single.sql constant.numeric.php</string>
+				<string>embedding.php text.html.basic source.php string.quoted.double.php constant.numeric.php, embedding.php text.html.basic source.php string.quoted.single.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.language.php, source.js.embedded.html string.quoted.single.js source.php constant.numeric.php, source.js.embedded.html string.quoted.double.js source.php constant.numeric.php, source.php string.quoted.double.php source.sql string.quoted.single.sql constant.numeric.php, source.php string.quoted.double.php constant.numeric.integer.decimal.php, source.php string.quoted.double.php constant.language.php, source.php string.quoted.double.php constant.other.php, source.php constant.numeric.integer.decimal.php</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -737,7 +737,7 @@
 				<key>name</key>
 				<string>JS: Object properties</string>
 				<key>scope</key>
-				<string>source.js meta.prototype.access.js support.constant.prototype.js, source.js meta.function.declaration.js meta.property.object.js entity.name.function.js, source.js meta.function.declaration.js support.constant.prototype.js, source.js meta.object-literal.key.js meta.function.declaration.js entity.name.function.js, source.js meta.function-call.method.js variable.function.js, source.js meta.property.object.js, source.js meta.object-literal.key.js</string>
+				<string>source.js meta.prototype.access.js support.constant.prototype.js, source.js meta.function.declaration.js meta.property.object.js entity.name.function.js, source.js meta.function.declaration.js support.constant.prototype.js, source.js meta.object-literal.key.js meta.function.declaration.js entity.name.function.js, source.js meta.function-call.method.js variable.function.js, source.js meta.property.object.js, source.js meta.object-literal.key.js, source.js support.constant.dom.js, source.js meta.object-literal.key.js entity.name.function.js, source.js meta.object-literal.js storage.type.js</string>
 				<key>settings</key>
 				<dict>
 					<key>foreground</key>
@@ -1088,6 +1088,212 @@
 				<dict>
 					<key>foreground</key>
 					<string>#D5D5D5</string>
+				</dict>
+			</dict>
+			<!-- Markdown -->
+			<dict>
+				<key>name</key>
+				<string>Markup: strike</string>
+				<key>scope</key>
+				<string>markup.strike, markup.strikethrough</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup: bold</string>
+				<key>scope</key>
+				<string>markup.bold</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>bold</string>
+					<key>foreground</key>
+					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup: italic</string>
+				<key>scope</key>
+				<string>markup.italic</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#F28B54</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: heading</string>
+				<key>scope</key>
+				<string>markup.heading</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D2C057</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: heading text</string>
+				<key>scope</key>
+				<string>markup.heading.markdown entity.name.section.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F0E8BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: List Items Punctuation</string>
+				<key>scope</key>
+				<string>punctuation.definition.list_item.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#5DB0D7</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Blockquote</string>
+				<key>scope</key>
+				<string>markup.quote</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Blockquote Punctuation</string>
+				<key>scope</key>
+				<string>punctuation.definition.blockquote.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>background</key>
+					<string>#9BBBDC</string>
+					<key>foreground</key>
+					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Separator</string>
+				<key>scope</key>
+				<string>meta.separator</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup: raw inline</string>
+				<key>scope</key>
+				<string>text.html.markdown markup.raw.inline</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#F0E8BC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup: underline</string>
+				<key>scope</key>
+				<string>markup.underline</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>underline</string>
+					<key>foreground</key>
+					<string>#9A7FD5</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markup: Raw block</string>
+				<key>scope</key>
+				<string>markup.raw.block</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#898989</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Raw Block fenced source</string>
+				<key>scope</key>
+				<string>markup.raw.block.fenced.markdown source</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#898989</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Fenced Bode Block</string>
+				<key>scope</key>
+				<string>punctuation.definition.fenced.markdown, variable.language.fenced.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Fenced Language</string>
+				<key>scope</key>
+				<string>variable.language.fenced.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>fontStyle</key>
+					<string>italic</string>
+					<key>foreground</key>
+					<string>#9BBBDC</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Escape</string>
+				<key>scope</key>
+				<string>constant.character.escape.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#D7BAD9</string>
+				</dict>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Markdown: Line break</string>
+				<key>scope</key>
+				<string>punctuation.definition.thematic-break.markdown</string>
+				<key>settings</key>
+				<dict>
+					<key>foreground</key>
+					<string>#9A7FD5</string>
 				</dict>
 			</dict>
 		</array>

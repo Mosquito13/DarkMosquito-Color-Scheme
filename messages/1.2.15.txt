@@ -1,0 +1,4 @@
+v1.2.15
+
+- Added support to Markdown syntax.
+- Fixed some issues in PHP and JS.
